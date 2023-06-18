@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for contributing to our study by answering our questionnaire.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Please Write Your Name: <input id="name" type="text" placeholder="Name and Surname" required></label>
+      <label id="email-label">Please Write Your Email Address: (To be used for communication only when necessary)<input id="email" type="email" placeholder="Email" required></label>
+      <label id="number-label"> Please Write Your Age (Years): <input id="number" type="number" min="15" max="110" placeholder="Age"></label>
+      </fieldset>
+      <fieldset>
+        <label>Do you have a pet?
+          Yes <input name="answer-type" type="radio" value="have pet">
+          No <input name="answer-type" type="radio" value="have not pet">
+        </label>
+        <label>If yes, how many?
+          <select id="dropdown">
+            <option>select one</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3-5</option>
+            <option>5+</option>
+            </select>  
+        </label>
+        <label>
+          <input type="checkbox" value="aquatic">aquatic pet
+          <input type="checkbox" value="flying">flying pet
+          <input type="checkbox" value="meat-eating">meat-eating pet
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>If there is anything else you want to add, you can write it in this field: <textarea></textarea>
+      </label>
+      <label>
+        <input id="submit" value="Submit" type="submit">
+      </label>
+      </fieldset>
+    </form>
+
+</body>
+</html>
